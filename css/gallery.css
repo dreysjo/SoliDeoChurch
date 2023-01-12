@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.site-nav{
+  background-color: #282e34;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 2%;
+}
+
+.site-nav span{
+  color: white;
+  display:flex;
+  margin-right:0;
+  font-size: 40px;
+  /* margin-left: auto; */
+  cursor: pointer;
+}
+
+.site-nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  /* padding: 20px; */
+}
+
+.site-nav li a{
+ text-decoration: none;
+  padding: 14px 16px;
+  color: white;
+}
+
+
+/* ========= SLIDESHOW ============ */
+
+.mySlides img {
+    vertical-align: middle;
+    height: 500px;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    margin: 40px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* ALTERNATIVE */
+
+
+.kegiatan-gereja-title {
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.35em;
+  /* padding-left: 0.35em; */
+  font-size: 30px;
+  margin-top: 60px;
+}

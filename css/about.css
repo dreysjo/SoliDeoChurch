@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  'Montserrat', sans-serif;
+  /* max-width: 100%; */
+}
+
+.site-nav{
+  /* background-color: #282e34; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 2%;
+}
+
+.site-nav span{
+  color: white;
+  display:flex;
+  margin-right:0;
+  font-size: 40px;
+  /* margin-left: auto; */
+  cursor: pointer;
+}
+
+.site-nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  /* padding: 20px; */
+}
+
+.site-nav li a{
+  position: relative;
+ text-decoration: none;
+  /* padding: 14px 16px; */
+  padding: 0 10px;
+  color: white;
+  margin: 20px;
+}
+
+.site-nav li a::after{
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height:3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+
+.site-nav li a:hover:after{
+  width: 100%;
+}
+.bgimg1{
+  display: block;
+  position: relative;
+  min-height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://cdn.idntimes.com/content-images/community/2021/02/aaron-burden-9zshnt5opqe-unsplash-72817af63b2a8dff902421284febc434-6e9e79c753b520fabba9396d46f40caf_600x400.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+}
+
+ .visi-misi{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* INI PART 2 */
+.part2{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* background: rgb(218, 209, 209); */
+  height: 76vh;
+
+}
+.part2 img{
+  /* display: flex; */
+  width:500px;
+  height: 400px;
+  padding: 50 50 50 50;
+  border-radius: 30px;
+}
+.texts{
+  padding:10%;
+  margin: 20px;
+  line-height: 20px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+.active{
+  position: relative;
+  transform: translateY(0px);
+  opacity: 100%;
+}
+
+/* FOOTER */
+footer{
+  background-color: #121212;
+  height: 40vh;
+  padding: 70px;
+  color: #fff;
+}
+
+.container{
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+  /* margin-top: 20px; */
+}
+ul{
+	list-style: none;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 5px;
+}
+.footer-col ul li a{
+  line-height:20px;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding: 10px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 30px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	/* margin:0 10px 10px 0; */
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.3s ease;
+  padding-top: 10px;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}

@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    margin-left: -20px;
+    margin-top: -10px;
+    height: 8vh;
+    padding: 1.5em;
+    position: relative;
+    background-color: cadetblue;
+    top: 0%;
+}
+
+.site-logo {
+    position: relative;
+    display: block;
+    float: left;
+    width: 3.1em;
+}
+
+.site-logo img {
+    border-radius: 100%;
+    width: "30000";
+    height: "30000";
+    object-fit: cover;
+    /*    object-position: 50% 0;*/
+}
+
+.logo {
+    opacity: 1;
+}
+
+.site-nav {
+    margin-top: 0;
+    position: relative;
+    float: right;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    display: block !important;
+    width: 80%;
+    padding: 2em 5em 0 0;
+    opacity: .95;
+    background: none;
+    margin-top: 0%;
+}
+
+.site-nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+.site-nav ul li {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+.site-nav ul li a {
+    font-size: .85em;
+    padding-bottom: .5em;
+    text-decoration: none;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.site-nav ul li a:hover {
+    outline: none;
+    border-bottom: 1px solid white;
+}
+
+
+/* ### TAB BUTTON ### */
+
+.tab {
+    float: left;
+    /* border: 1px solid beige; */
+    background-color: rgb(81, 136, 138);
+    width: 20%;
+    height: 560px;
+    border-radius: 5px;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: rgb(61, 98, 100);
+}
+
+
+/* Create an active/current "tab button" class */
+
+.tab button.active {
+    background-color: rgba(243, 255, 227, 0.747);
+    color: black;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    min-height: 400px;
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid #ccc; */
+    width: 70%;
+    border-left: none;
+    height: 300px;
+    margin-top: 5%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* fade animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 3
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 3
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
